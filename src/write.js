@@ -12,5 +12,5 @@ function writePost(argument) {
 
 	ref.push().set(obj)
 
-	return alert("posted")
+	return alert("Succesfully posted.")
 }
