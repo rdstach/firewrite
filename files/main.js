@@ -12,7 +12,7 @@ function createArticle(title, text) {
 	                </div> \
 	              </div> \
 	            <div class=\"content article-body\"> \
-	              <p> \
+	              <p style=\"white-space: pre-line\"> \
 	              	" + text + " \
 	              </p> \
 	              </div> \
@@ -20,5 +20,4 @@ function createArticle(title, text) {
 	          </div>";
 
 	root.prepend(str)
-
 }
