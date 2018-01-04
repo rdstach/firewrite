@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Firewrite</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<link rel="stylesheet" href="../files/style.css">
+</head>
+<body>
+	<div class="container">
+	    <section class="section">
+			<div class="container">
+				<div class="field">
+					<label class="label is-medium">Title</label>
+					<div class="control">
+						<input type="text" class="input is-medium" placeholder="Article Title" id="title">
+					</div>
+				</div>
+				<br>
+				<div class="field">
+					<label class="label is-medium">Content</label>
+					<div class="control">
+						<textarea class="textarea is-medium" rows="6" id="content" placeholder="Write something."></textarea>
+					</div>
+				</div>
+				<br>
+				<center>
+					<button class="button is-dark is-large" style="width:30%" onclick="writePost()">
+						Submit
+					</button>
+				</center>
+			</div>
+		</section>
+	  </div>
+
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="../src/config.js"></script>
+	<script src="http://aieo.surge.sh/frameworks/jquery.js"></script>
+	<script src="../src/write.js"></script>
+</body>
+</html>
