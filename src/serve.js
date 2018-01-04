@@ -1,3 +1,5 @@
+let ref = firebase.database().ref('posts')
+
 function createArticle(title, text) {
 	const root = $('#posts');
 
@@ -19,5 +21,13 @@ function createArticle(title, text) {
 	            </div> \
 	          </div>`;
 
-	root.prepend(str)
+	root.append(str)
 }
+
+ref.once('value', function(snapshot) {
+	$('#loadingBar').addClass('is-hidden');
+	
+	snapshot.forEach(function(child) {
+		createArticle(child.val().title, child.val().content)
+	})
+})
