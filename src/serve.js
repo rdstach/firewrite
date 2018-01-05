@@ -1,4 +1,4 @@
-let ref = firebase.database().ref('posts')
+let ref = firebase.database().ref('rootRef/posts')
 
 function createArticle(title, text) {
 	const root = $('#posts');
