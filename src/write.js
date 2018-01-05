@@ -1,4 +1,4 @@
-const rootRef = firebase.database().ref(),
+const rootRef = firebase.database().ref('rootRef'),
 	  postsRef = rootRef.child('posts');
 
 function writePost(argument) {
