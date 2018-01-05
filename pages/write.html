@@ -10,26 +10,62 @@
 	<link rel="stylesheet" href="../files/style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="loginSection">
+		<section class="section">
+			<div class="field">
+				<label class="label is-large">Username</label>
+				<div class="control">
+					<input type="text" class="input is-large" id="usernameLogin" placeholder="Username">
+				</div>
+			</div>
+			<br>
+			<div class="field">
+				<label class="label is-large">Password</label>
+				<div class="control">
+					<input type="password" class="input is-large" id="passwordLogin" placeholder="Password">
+				</div>
+			</div>
+			<br>
+			<center>
+				<button class="button is-dark is-large" style="width:30%" onclick="callLogin()">
+					Log In
+				</button>
+			</center>
+		</section>
+	</div>
+	<div class="container is-hidden" id="writeSection">
 	    <section class="section">
 			<div class="container">
 				<div class="field">
 					<label class="label is-medium">Title</label>
 					<div class="control">
-						<input type="text" class="input is-medium" placeholder="Article Title" id="title">
+						<input type="text" 
+							class="input is-medium" 
+							placeholder="Article Title" 
+							id="title">
 					</div>
 				</div>
 				<br>
 				<div class="field">
 					<label class="label is-medium">Content</label>
 					<div class="control">
-						<textarea class="textarea is-medium" rows="6" id="content" placeholder="Write something."></textarea>
+						<textarea class="textarea is-medium" 
+							rows="6" id="content" 
+							placeholder="Write something."></textarea>
 					</div>
 				</div>
 				<br>
 				<center>
-					<button class="button is-dark is-large" style="width:30%" onclick="writePost()">
+					<button class="button is-dark is-large" 
+						style="width:30%" 
+						onclick="writePost()">
 						Submit
+					</button>
+					<br><br>
+					<button class="button is-outlined is-dark is-large" 
+						style="width:30%" 
+						onclick="logOut()">
+						Log Out
 					</button>
 				</center>
 			</div>
@@ -40,5 +76,6 @@
 	<script src="../src/config.js"></script>
 	<script src="http://aieo.surge.sh/frameworks/jquery.js"></script>
 	<script src="../src/write.js"></script>
+	<script src="../src/auth.js"></script>
 </body>
 </html>
