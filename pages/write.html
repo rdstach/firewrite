@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
 	<link rel="stylesheet" href="../files/style.css">
+	<link rel="favicon" href="../favicon.ico">
 </head>
 <body>
-	<div class="container" id="loginSection">
+	<!-- <div class="container" id="loginSection">
 		<section class="section">
 			<div class="field">
 				<label class="label is-large">Username</label>
@@ -32,7 +33,36 @@
 				</button>
 			</center>
 		</section>
-	</div>
+	</div> -->
+	<section class="hero is-success is-fullheight" id="loginSection">
+	    <div class="hero-body">
+	      <div class="container has-text-centered">
+	        <div class="column is-4 is-offset-4">
+	          <h3 class="title has-text-grey">Login</h3>
+	          <p class="subtitle has-text-grey">Please login to proceed.</p>
+	          <div class="box">
+	            <figure class="avatar">
+	              <img src="../files/icon.png">
+	            </figure>
+	            <form>
+	              <div class="field">
+	                <div class="control">
+	                  <input class="input is-large" type="text" placeholder="Your Username" autofocus="" id="usernameLogin">
+	                </div>
+	              </div>
+
+	              <div class="field">
+	                <div class="control">
+	                  <input class="input is-large" type="password" placeholder="Your Password" id="passwordLogin">
+	                </div>
+	              </div>
+	              <a class="button is-block is-info is-large" href="javascript:callLogin()">Login</a>
+	            </form>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
 	<div class="container is-hidden" id="writeSection">
 	    <section class="section">
 			<div class="container">
