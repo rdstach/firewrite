@@ -54,6 +54,7 @@ div.column.is-8:first-child {
 .article-body {
   line-height: 1.4;
   margin: 0 6rem;
+  font-weight: 500;
 }
 .promo-block .container {
   margin: 1rem 5rem;
@@ -83,9 +84,6 @@ div.column.is-8:first-child {
 }
 input {
   font-weight: 300;
-}
-p {
-  font-weight: 700;
 }
 p.subtitle {
   padding-top: 1rem;
