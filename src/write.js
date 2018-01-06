@@ -3,7 +3,8 @@ const rootRef = firebase.database().ref('rootRef'),
 
 function writePost(argument) {
 	let title = $('#title').val(),
-	content = $('#content').val();
+	rawContent = $('#content').val(),
+	content = markdown.toHTML(rawContent);
 
 	let obj = {
 		title,
