@@ -21,7 +21,7 @@ function createArticle(title, text) {
 	            </div> \
 	          </div>`;
 
-	root.append(str)
+	root.prepend(str)
 }
 
 ref.once('value', function(snapshot) {
