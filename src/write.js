@@ -5,11 +5,12 @@ const rootRef = firebase.database().ref('rootRef'),
 function writePost(argument) {
 	let title = $('#title').val(),
 	rawContent = $('#content').val(),
-	content = markdown.toHTML(rawContent);
+	mdContent = markdown.toHTML(rawContent);
 
 	let obj = {
 		title,
-		content,
+		rawContent,
+		content: mdContent,
 		date: currentDate
 	}
 
