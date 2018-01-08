@@ -3,7 +3,7 @@ let ref = firebase.database().ref('rootRef/posts')
 function createArticle(title, date, key, text) {
 	const root = $('#posts');
 
-	let str = `<section class="hero is-dark is-bold is-small promo-block">
+	let str = `<section class="hero is-white is-bold is-small promo-block">
 			<div class="hero-body">
 			<div class="container">
 			<h1 class="title"> 
