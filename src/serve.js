@@ -7,7 +7,7 @@ function createArticle(title, date, key, text) {
 			<div class="hero-body">
 			<div class="container">
 			<h1 class="title"> 
-			<a href=post.html?postId=${key}>
+			<a href=pages/post.html?postId=${key}>
 			${title}
 			</a>
 			</h1>
