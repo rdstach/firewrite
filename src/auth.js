@@ -1,4 +1,4 @@
-const authRef = rootRef.child('auth')
+const authRef = firebase.database().ref('rootRef/auth')
 
 function logIn(username, password) {
 	authRef.once('value', function(snapshot) {
@@ -10,6 +10,7 @@ function logIn(username, password) {
 
 			$('#loginSection').addClass('is-hidden')
 			$('#writeSection').removeClass('is-hidden')
+			$('#postsSection').removeClass('is-hidden')
 
 			authRef.update({
 				logged_in: true
