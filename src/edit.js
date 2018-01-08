@@ -9,10 +9,14 @@ function writePost(argument) {
 	let obj = {
 		title,
 		rawContent,
-		content: mdContent
+		mdContent
 	}
 
 	postsRef.push().set(obj)
 
 	return alert("Succesfully posted.")
+}
+
+function insertContent(title, content) {
+	// body...
 }

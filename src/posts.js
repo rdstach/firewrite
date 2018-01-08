@@ -22,7 +22,7 @@ function insertArticle(ref) {
 	const root = $('#posts');
 	let title = ref.title,
 		date = ref.date,
-		content = ref.content;
+		content = ref.mdContent;
 
 	let str = `<div class=\"card article\"> \
 	            <div class=\"card-content\"> \

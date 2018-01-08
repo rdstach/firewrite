@@ -25,6 +25,6 @@ ref.once('value', function(snapshot) {
 	$('#loadingBar').addClass('is-hidden');
 	
 	snapshot.forEach(function(child) {
-		createArticle(child.val().title, child.val().date, child.key, child.val().content)
+		createArticle(child.val().title, child.val().date, child.key, child.val().mdContent)
 	})
 })

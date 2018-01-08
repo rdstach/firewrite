@@ -1,6 +1,6 @@
 const rootRef = firebase.database().ref('rootRef'),
 	postsRef = rootRef.child('posts'),
-	currentDate = moment().format('MMMM D, YYYY');
+	date = moment().format('MMMM D, YYYY');
 
 function writePost(argument) {
 	let title = $('#title').val(),
@@ -10,8 +10,8 @@ function writePost(argument) {
 	let obj = {
 		title,
 		rawContent,
-		content: mdContent,
-		date: currentDate
+		mdContent,
+		date
 	}
 
 	postsRef.push().set(obj)
