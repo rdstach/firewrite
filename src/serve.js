@@ -3,18 +3,20 @@ let ref = firebase.database().ref('rootRef/posts')
 function createArticle(title, date, key, text) {
 	const root = $('#posts');
 
-	let str = `<div class=\"card article\"> \
-	            <div class=\"card-content\"> \
-	              <div class=\"media\"> \
-	                <div class=\"media-content media-content-left\" align=\"left\"> \
-	                  <p class=\"title article-title\"><a href=post.html?postId=${key}>${title}</a></p> \
-	                  <p class=\"subtitle is-6 article-subtitle\"> \
-	                    Written on ${date} \
-	                  </p> \
-	                </div> \
-	              </div> \
-	            </div> \
-	          </div>`;
+	let str = `<section class="hero is-dark is-bold is-small promo-block">
+			<div class="hero-body">
+			<div class="container">
+			<h1 class="title"> 
+			<a href=post.html?postId=${key}>
+			${title}
+			</a>
+			</h1>
+			<h2 class="subtitle">
+			Written on ${date}
+			</h2>
+			</div>
+			</div>
+			</section>`
 
 	root.prepend(str)
 }
