@@ -35,6 +35,9 @@ html,body {
 .media-content {
   margin-top: 3rem;
 }
+.media-content-left {
+  margin-left: 10%;  
+}
 .article, .promo-block {
   margin-top: 6rem;
 }
