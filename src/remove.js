@@ -14,6 +14,9 @@ function createArticle(title, date, key, text) {
 			</h2>
 			<br>
 			<h1 class="title">
+			<a class="button is-info" href="edit.html?postId='${key}'">
+			Edit Post
+			</a>
 			<a class="button is-danger" href="javascript:removePost('${key}')">
 			Remove Post
 			</a>

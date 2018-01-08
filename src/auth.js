@@ -11,6 +11,7 @@ function logIn(username, password) {
 			$('#loginSection').addClass('is-hidden')
 			$('#writeSection').removeClass('is-hidden')
 			$('#postsSection').removeClass('is-hidden')
+			$('#createArticleHeader').removeClass('is-hidden')
 
 			authRef.update({
 				logged_in: true
