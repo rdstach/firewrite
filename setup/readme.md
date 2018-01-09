@@ -6,8 +6,9 @@ A guide on how to setup Firewrite.
 2. Export Firebase Service Account (`Settings > Project Settings > Service Accounts > Generate New Private Key`)
 3. Move the downloaded service account key into this directory.
 4. Rename the service account key file into `serviceAccountKey.json`
-5. Install dependencies
-6. Run the script
+5. Change the url on line 6
+6. Install dependencies
+7. Run the script
 
 ## Command Line Tips
 ```
