@@ -17,16 +17,6 @@ $ npm install
 $ npm start
 ```
 
-## Data Path
-```json
-{
-  "rootRef" : {
-    "auth" : {
-      // auth > username & password
-    },
-    "posts" : {
-	// posts
-    }
-  }
-}
-```
+After running this script, the auth node will exist on your database. After that, let's just say you won't need this directory anymore. Just do `cd ..`.
+
+> You're done here, go back to the main repo.

@@ -4,6 +4,24 @@
 A blogging system builted on Firebase Realtime Database.
 To setup Firewrite, take a look at the setup's [readme](https://github.com/stach/firewrite/blob/master/setup/readme.md).
 
+## Inserting Configuration
+You will insert the configuration that you got from Firebase into `src/config.js`.
+
+##### Example Firebase Configuratoin
+```
+var config = {
+    apiKey: "XXX",
+    authDomain: "XXX",
+    databaseURL: "XXX",
+    projectId: "XXX",
+    storageBucket: "XXX",
+    messagingSenderId: "XXX"
+};
+firebase.initializeApp(config);
+```
+
+I recommend using [JavaScript Obfuscator](https://javascript-obfuscator.org) to encrypt your configuration, just like I did.
+
 ## Caught a Bug?
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
