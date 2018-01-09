@@ -15,37 +15,42 @@ function getQueryParams(qs) {
 const query = getQueryParams(document.location.search);
 const postId = query.postId
 const rootRef = firebase.database().ref('rootRef/posts'),
-	postsRef = rootRef.child('posts/' + `${postId}`),
+	postsRef = rootRef.child(postId),
 	print = console.log;
 
 function writePost(title, content) {
-	let title = $('#title').val(),
-	rawContent = $('#content').val(),
+	let updatedTitle = title,
+	rawContent = content,
 	mdContent = markdown.toHTML(rawContent);
 
 	let obj = {
-		title,
 		rawContent,
 		mdContent,
+		title: updatedTitle
 	}
 
-	postsRef.push().update(obj)
+	postsRef.update(obj)
 
 	return alert("Post has been succesfully updated.")
 }
 
 function insertContent(title, content) {
-	$('#title').val(title)
-	$('#content').val(content)
+	let currentTitle = $('#title').val(title),
+	currentContent = $('#content').val(content);
 
-	newTitle = $('#title').val()
-	newContent = $('#content').val()
-
-	writePost(newTitle, newContent)
+	let newTitle = $('#title').val(),
+	newContent = $('#content').val();
+	// print(title)
+	// print(content)
 }
 
-// ref.once('value', function(snapshot) {
-	postsRef.once('value', function(snapshot) {
-		insertContent(snapshot.val().title, snapshot.val().rawContent)
-	})
-// })
+postsRef.once('value', function(snapshot) {
+	insertContent(snapshot.val().title, snapshot.val().rawContent)
+})
+
+function callUpdatePost() {
+	let editedTitle = $('#title').val(),
+	editedContent = $('#content').val();
+
+	writePost(editedTitle, editedContent)
+}
