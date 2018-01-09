@@ -7,7 +7,7 @@ To setup Firewrite, take a look at the setup's [readme](https://github.com/stach
 ## Inserting Configuration
 You will insert the configuration that you got from Firebase into `src/config.js`.
 
-##### Example Firebase Configuratoin
+##### Example Firebase Configuration
 ```
 var config = {
     apiKey: "XXX",
