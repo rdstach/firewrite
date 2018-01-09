@@ -1,0 +1,29 @@
+{
+  "name": "firewrite",
+  "version": "0.2.0",
+  "description": "A blogging system builted on Firebase Realtime Database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stach/firewrite.git"
+  },
+  "keywords": [
+    "firebase",
+    "blogging",
+    "write"
+  ],
+  "author": "Roger Stach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stach/firewrite/issues"
+  },
+  "homepage": "https://github.com/stach/firewrite#readme",
+  "dependencies": {
+    "firebase-admin": "^5.7.0",
+    "prompt": "^1.0.0"
+  }
+}
