@@ -3,6 +3,20 @@
 
 A blogging system builted on Firebase Realtime Database.
 
+## Data Path
+```json
+{
+  "rootRef" : {
+    "auth" : {
+      // auth > username & password
+    },
+    "posts" : {
+	// posts
+    }
+  }
+}
+```
+
 ## Caught a Bug?
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
