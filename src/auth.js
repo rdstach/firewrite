@@ -40,3 +40,9 @@ function logOut() {
 		logged_in: false
 	})
 }
+
+function logOutRelink() {
+	logOut()
+
+	window.location.href = '../admin.html'
+}

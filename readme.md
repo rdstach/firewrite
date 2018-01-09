@@ -1,4 +1,4 @@
-# Firewrite
+# Firewrite 0.2.0
 [![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
 
 A simple blogging system builted using the basic tools : Bulma, Static HTML & Firebase. Simple stuff.
