@@ -2,20 +2,7 @@
 [![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
 
 A blogging system builted on Firebase Realtime Database.
-
-## Data Path
-```json
-{
-  "rootRef" : {
-    "auth" : {
-      // auth > username & password
-    },
-    "posts" : {
-	// posts
-    }
-  }
-}
-```
+To setup Firewrite, take a look at the setup's [readme](https://github.com/stach/firewrite/blob/master/setup/readme.md).
 
 ## Caught a Bug?
 
