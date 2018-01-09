@@ -54,3 +54,9 @@ function callUpdatePost() {
 
 	writePost(editedTitle, editedContent)
 }
+
+function logOutEdit() {
+	logOut()
+
+	window.location.href = '../admin.html'
+}
